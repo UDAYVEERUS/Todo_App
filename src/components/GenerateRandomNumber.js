@@ -8,5 +8,6 @@ function getRandomNumber(min, max) {
   const maxNumber = 100;
   const randomNumber = getRandomNumber(minNumber, maxNumber);
   
+  
   console.log(randomNumber);
   
