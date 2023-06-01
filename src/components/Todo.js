@@ -60,7 +60,7 @@ const Todo = () => {
         <input type="text" value={subject} onChange={handleSubject} placeholder='Enter Subject' /><br />
         <textarea value={description} placeholder='Enter Description' onChange={handleDescription}></textarea><br />
         <button style={{ backgroundColor: "green", color: "white" }} type='submit' onClick={handleSubmit}>{editMode ? "Update" : "Add"}</button><br />
-        <button onClick={handleReset}>{editMode ? "" : "reset"}</button>
+        <button onClick={handleReset}>Reset</button>
       </div>
       <div style={{ display: "flex", gap: "4px", width: "full", margin: "10px" }}>
         {todo && todo.map((item, index) => {
