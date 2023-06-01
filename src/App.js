@@ -5,6 +5,7 @@ import TodoApp from './components/Todo_app';
 import NumberGenerator from './components/Generate_number';
 import Arrayofobject from './components/ArrayOfObject';
 import ShowingText from './components/showingtext';
+import Timer from './components/Timer';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path='/number' element={<NumberGenerator />} />
         <Route path='/arrayofobject' element={<Arrayofobject />} />
         <Route path='/showingtext' element={<ShowingText />} />
+        <Route path='/timer' element={<Timer />} />
         </Routes>
       </Router>
     </>
