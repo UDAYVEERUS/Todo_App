@@ -7,6 +7,7 @@ import Arrayofobject from './components/ArrayOfObject';
 import ShowingText from './components/showingtext';
 import Timer from './components/Timer';
 import Todo from './components/Todo';
+import Fetchapi from './components/Fetchapi';
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route path='/arrayofobject' element={<Arrayofobject />} />
         <Route path='/showingtext' element={<ShowingText />} />
         <Route path='/timer' element={<Timer />} />
+        <Route path='/data' element={<Fetchapi />} />
         </Routes>
       </Router>
     </>
