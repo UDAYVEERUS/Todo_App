@@ -11,6 +11,7 @@ import Fetchapi from './components/Fetchapi';
 import ArrayObject from './components/ArrayObject';
 import Events from './components/Events';
 import DIgitalClock from './components/DIgitalClock';
+import IncreDecre from './components/IncreDecre';
 function App() {
   return (
     <>
@@ -27,6 +28,7 @@ function App() {
         <Route path='/mydata' element={<ArrayObject />} />
         <Route path='/event' element={<Events />} />
         <Route path='/time' element={<DIgitalClock />} />
+        <Route path='/count' element={<IncreDecre />} />
 
         </Routes>
       </Router>
