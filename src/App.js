@@ -10,6 +10,7 @@ import Todo from './components/Todo';
 import Fetchapi from './components/Fetchapi';
 import ArrayObject from './components/ArrayObject';
 import Events from './components/Events';
+import DIgitalClock from './components/DIgitalClock';
 function App() {
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
         <Route path='/data' element={<Fetchapi />} />
         <Route path='/mydata' element={<ArrayObject />} />
         <Route path='/event' element={<Events />} />
+        <Route path='/time' element={<DIgitalClock />} />
 
         </Routes>
       </Router>
