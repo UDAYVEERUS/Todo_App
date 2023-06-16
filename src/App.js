@@ -9,6 +9,7 @@ import Timer from './components/Timer';
 import Todo from './components/Todo';
 import Fetchapi from './components/Fetchapi';
 import ArrayObject from './components/ArrayObject';
+import Events from './components/Events';
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
         <Route path='/timer' element={<Timer />} />
         <Route path='/data' element={<Fetchapi />} />
         <Route path='/mydata' element={<ArrayObject />} />
+        <Route path='/event' element={<Events />} />
 
         </Routes>
       </Router>
