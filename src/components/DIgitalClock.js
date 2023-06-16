@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import '../App.css'
 
 const DIgitalClock = () => {
-    let date = new Date().toLocaleDateString()
     let time = new Date().toLocaleTimeString()
     const [ctime, setCtime] = useState(time)
 
@@ -11,12 +10,11 @@ const DIgitalClock = () => {
         time = new Date().toLocaleTimeString()
         setCtime(time)
     }
+
+    setInterval(updateTime,1000)
   return (
-    <div>
-        <h1>Time</h1>
-        <h2>{ctime}</h2>
-        <button onClick={updateTime}>get time</button>
-        <h2>{date}</h2>
+    <div style={{display:"flex", justifyContent:"center"}}>
+        <h1 style={{fontSize : "50px"}}>{ctime}</h1>
     </div>
   )
 }
