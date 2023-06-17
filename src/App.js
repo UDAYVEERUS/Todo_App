@@ -1,8 +1,6 @@
-// import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as  Router,Switch,Route  } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import TodoApp from './components/Todo_app';
 import NumberGenerator from './components/Generate_number';
 import Arrayofobject from './components/ArrayOfObject';
@@ -23,15 +21,15 @@ function App() {
 
           <Route path='/todo' exact component={TodoApp} />
           <Route path='/' exact component={Todo} />
-          {/* <Route exact path='/number' element={<NumberGenerator />} />
-        <Route exact path='/arrayofobject' element={<Arrayofobject />} />
-        <Route exact path='/showingtext' element={<ShowingText />} />
-        <Route exact path='/timer' element={<Timer />} />
-        <Route exact path='/data' element={<Fetchapi />} />
-        <Route exact path='/mydata' element={<ArrayObject />} />
-        <Route exact path='/event' element={<Events />} />
-        <Route exact path='/time' element={<DIgitalClock />} />
-        <Route exact path='/count' element={<IncreDecre />} /> */}
+          <Route exact path='/number' component={NumberGenerator} />
+          <Route exact path='/arrayofobject' component={Arrayofobject} />
+          <Route exact path='/showingtext' component={ShowingText} />
+          <Route exact path='/timer' component={Timer} />
+          <Route exact path='/data' component={Fetchapi} />
+          <Route exact path='/mydata' component={ArrayObject} />
+          <Route exact path='/event' component={Events} />
+          <Route exact path='/time' component={DIgitalClock} />
+          <Route exact path='/count' component={IncreDecre} />
           <Route component={Error} />
 
         </Switch>
