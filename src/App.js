@@ -14,6 +14,7 @@ import DIgitalClock from './components/DIgitalClock';
 import IncreDecre from './components/IncreDecre';
 import Error from './components/Error';
 import Fetching from './components/Fetching';
+import Props from './components/Props';
 function App() {
   return (
     <>
@@ -32,6 +33,7 @@ function App() {
           <Route exact path='/time' component={DIgitalClock} />
           <Route exact path='/count' component={IncreDecre} />
           <Route exact path="/fetchjson" component={Fetching} />
+          <Route exact path="/props" component={Props} />
           <Route component={Error} />
 
         </Switch>
