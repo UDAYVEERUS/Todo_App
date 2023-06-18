@@ -15,6 +15,7 @@ import IncreDecre from './components/IncreDecre';
 import Error from './components/Error';
 import Fetching from './components/Fetching';
 import Props from './components/Props';
+import Form from './components/Form';
 function App() {
   return (
     <>
@@ -34,6 +35,7 @@ function App() {
           <Route exact path='/count' component={IncreDecre} />
           <Route exact path="/fetchjson" component={Fetching} />
           <Route exact path="/props" component={Props} />
+          <Route exact path="/form" component={Form} />
           <Route component={Error} />
 
         </Switch>
