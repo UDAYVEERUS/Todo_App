@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Form = () => {
 
     const [name, setName] = useState("")
-    const [fullname, setFullname] = useState("")
+    const [fullName, setFullName] = useState("")
 
     const handleChange = (event) => {
         // console.log(event.target.value)
@@ -12,14 +12,14 @@ const Form = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        setFullname(name)
+        setFullName(name)
     }
     const resetForm = () => {
-        setFullname("")
+        setFullName("")
     }
     return (
         <div>
-            <h1>Hello : {fullname}</h1>
+            <h1>Hello : {fullName}</h1>
             <input type="text" onChange={handleChange} placeholder='Enter Your Name' value={name} />
             <button onClick={handleSubmit}>submit</button>
             <button onClick={resetForm}>reset</button>
