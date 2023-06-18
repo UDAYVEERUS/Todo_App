@@ -14,11 +14,15 @@ const Form = () => {
         event.preventDefault()
         setFullname(name)
     }
+    const resetForm = () => {
+        setFullname("")
+    }
     return (
         <div>
             <h1>Hello : {fullname}</h1>
             <input type="text" onChange={handleChange} placeholder='Enter Your Name' value={name} />
             <button onClick={handleSubmit}>submit</button>
+            <button onClick={resetForm}>reset</button>
         </div>
     )
 }
